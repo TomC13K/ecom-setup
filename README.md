@@ -23,7 +23,7 @@ $ yarn generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
-## config
+## config to connect commercetool API
 
 - in file `middleware.config.js`
 
