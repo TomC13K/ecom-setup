@@ -1,6 +1,5 @@
-# theme
 
-> My awesome Vue Storefront project
+> Vue Storefront project
 
 ## Build Setup
 
