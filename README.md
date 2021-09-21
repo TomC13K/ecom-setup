@@ -1,7 +1,7 @@
 # Vue Storefront project
 
 ## Pre-requisities
-- nodeJS 14  12 & 16  dont work
+- nodeJS 14   (12 & 16  wont work)
 
 ## Build Setup
 
