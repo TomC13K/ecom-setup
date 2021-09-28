@@ -137,6 +137,7 @@ export default {
       'vee-validate/dist/rules'
     ],
     plugins: [
+      
       new webpack.DefinePlugin({
         'process.VERSION': JSON.stringify({
           // eslint-disable-next-line global-require
@@ -171,5 +172,8 @@ export default {
         };
       }
     }
-  }
+  },
+  plugins: [
+    { src: '~/plugins/init-client', mode: 'client' },
+  ]
 };

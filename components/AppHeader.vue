@@ -54,7 +54,7 @@
         </div>
       </template>
       <template #search>
-        <SfSearchBar
+        <!-- <SfSearchBar
           ref="searchBarRef"
           :placeholder="$t('Search for items')"
           aria-label="Search"
@@ -86,7 +86,8 @@
               </span>
             </SfButton>
           </template>
-        </SfSearchBar>
+        </SfSearchBar> -->
+<algolia-search/>
       </template>
     </SfHeader>
     <SearchResults :visible="isSearchOpen" :result="result" @close="closeSearch" @removeSearchResults="removeSearchResults" />
@@ -110,6 +111,7 @@ import {
 } from '@storefront-ui/vue/src/utilities/mobile-observer.js';
 import debounce from 'lodash.debounce';
 import mockedSearchProducts from '../mockedSearchProducts.json';
+import AlgoliaSearch from './AlgoliaSearch.vue'
 
 export default {
   components: {
@@ -124,7 +126,8 @@ export default {
     SfOverlay,
     SfMenuItem,
     SfLink,
-    HeaderNavigation
+    HeaderNavigation,
+    AlgoliaSearch
   },
   directives: { clickOutside },
   setup(props, { root }) {
