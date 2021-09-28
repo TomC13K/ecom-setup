@@ -48,9 +48,10 @@ export default {
     name: "App",
     data() {
         return {
+            // process.env.KEY  defined in nuxt.config.js  env section
             searchClient: algoliasearch(
-                <ALGOLIA_APP_ID>,
-                <ALGOLIA_SEARCH_API>
+                process.env.algoliaAppID,
+                process.env.algoliaSearchAPI
             ),
         };
     },

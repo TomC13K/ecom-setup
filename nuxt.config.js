@@ -175,5 +175,9 @@ export default {
   },
   plugins: [
     { src: '~/plugins/init-client', mode: 'client' },
-  ]
+  ],
+  env: {
+    algoliaAppID: process.env.VUE_APP_ALGOLIA_APP_ID,
+    algoliaSearchAPI: process.env.VUE_APP_ALGOLIA_SEARCH_API
+  }
 };
